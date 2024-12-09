@@ -1,0 +1,129 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;       
+  }
+:root{
+  --dark:#233541;
+  --white:#E2F1E7;
+  --dark-blue:#2A4252;
+  --dark-aqua:#387478;
+}
+
+header{
+  background-color: var(--dark-blue);
+  border-bottom:1px solid var(--white);
+  position: static;
+  top: 0;
+  left: 0;
+}
+.site-title{
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+}
+main{
+  display: flex;
+  background-color: var(--dark-blue);
+  height: 100vh;
+}
+
+
+#form-area{
+  max-width: 400px;
+  min-width: min-content;
+  max-height: 100%;
+  overflow-y: auto;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  border-right: 1px solid var(--white);
+  padding: 1rem 3rem ;
+}.form-area input{
+  border-radius: 2rem;
+  padding:.2rem .2rem .2rem 1rem;
+  border: none;
+  font-family:'Courier New', Courier, monospace;
+  
+}input:hover{
+  border: 1px solid green;
+}
+.category{
+
+}
+.icon{
+  max-width: 24px;
+  cursor: pointer;
+}
+.cat-title:hover .icon{
+  transform: rotate(180deg);
+}
+.forms{
+  padding-left: 1rem;
+}
+.cat-title{
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.form_row{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}.form_row input{
+  font-size: 1rem;
+}
+
+.resumee-area{
+  max-height: 100%;
+  width: 100%;
+  background-color: var(--dark-aqua);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  overflow-y: auto;
+}.resumee-area img{
+  width: 10rem;
+}
+.full_name{
+  margin-bottom: 1rem;
+  font-size: larger;
+}.email,.social{
+  font-size: large;
+}
+.card{
+  max-width: 900px;
+  background-color: var(--white);
+  margin: 1.5rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 5rem;
+  align-items: center;
+  
+}.card img{
+  border-radius: 100%;
+  border: 1px solid var(--dark);
+  margin-left: 2rem;
+}.resumeTitle{
+  font-size: 2rem;
+  color: var(--dark);
+  font-weight: 700;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 1rem;
+}.edu_item,.exp_item{
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-family:'Courier New', Courier, monospace ;
+}#special_card{
+  display: block;
+}.item1{
+  min-width: max-content;
+}
